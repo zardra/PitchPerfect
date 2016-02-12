@@ -6,23 +6,23 @@ provides-nominal:
 provides-member:
 - ["C12PitchPerfect14ViewController", ""]
 provides-dynamic-lookup:
-- "recordingText"
-- "stopRecording"
-- "stopButton"
-- "viewWillAppear"
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "viewWillAppear"
+- "stopButton"
+- "viewDidLoad"
+- "stopRecording"
+- "recordingText"
 - "recordButton"
 - "recordAudio"
 depends-top-level:
-- "UILabel"
-- "Bool"
-- !private "BooleanLiteralType"
-- "UIViewController"
-- !private "print"
-- "UIButton"
 - "ViewController"
+- "UIButton"
+- !private "BooleanLiteralType"
+- "Bool"
+- !private "print"
+- "UILabel"
 - !private "StringLiteralType"
+- "UIViewController"
 depends-member:
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
 - !private ["PSs9AnyObject", "enabled"]
