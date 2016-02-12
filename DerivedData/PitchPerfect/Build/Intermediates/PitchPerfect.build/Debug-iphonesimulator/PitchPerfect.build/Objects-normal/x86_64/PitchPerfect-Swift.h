@@ -108,14 +108,17 @@ SWIFT_CLASS("_TtC12PitchPerfect11AppDelegate")
 @end
 
 @class UIButton;
+@class UILabel;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC12PitchPerfect14ViewController")
 @interface ViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified recordingText;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)recordAudio:(UIButton * __nonnull)sender;
+- (IBAction)stopRecording:(UIButton * __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
