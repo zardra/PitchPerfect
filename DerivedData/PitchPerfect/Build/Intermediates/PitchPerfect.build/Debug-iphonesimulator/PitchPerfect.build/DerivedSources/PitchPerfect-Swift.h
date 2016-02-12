@@ -115,6 +115,9 @@ SWIFT_CLASS("_TtC12PitchPerfect11AppDelegate")
 SWIFT_CLASS("_TtC12PitchPerfect14ViewController")
 @interface ViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified recordingText;
+@property (nonatomic, weak) IBOutlet UIButton * __null_unspecified stopButton;
+@property (nonatomic, weak) IBOutlet UIButton * __null_unspecified recordButton;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)recordAudio:(UIButton * __nonnull)sender;

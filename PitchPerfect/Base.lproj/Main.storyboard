@@ -79,7 +79,9 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="recordButton" destination="Rwi-fU-w0X" id="7md-qF-D68"/>
                         <outlet property="recordingText" destination="kLz-F5-P5p" id="FCU-fY-oPO"/>
+                        <outlet property="stopButton" destination="UBJ-5R-iAI" id="eMF-dU-crP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

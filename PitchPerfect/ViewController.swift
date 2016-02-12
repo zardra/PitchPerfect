@@ -11,6 +11,13 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var recordingText: UILabel!
+    @IBOutlet weak var stopButton: UIButton!
+    @IBOutlet weak var recordButton: UIButton!
+    
+    override func viewWillAppear(animated: Bool) {
+        stopButton.hidden = true
+        recordButton.enabled = true
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +32,8 @@ class ViewController: UIViewController {
 
     @IBAction func recordAudio(sender: UIButton) {
         recordingText.hidden = false
-        
+        stopButton.hidden = false
+        recordButton.enabled = false
         //TODO: Record user's voice
         
         print("in recordAudio")
