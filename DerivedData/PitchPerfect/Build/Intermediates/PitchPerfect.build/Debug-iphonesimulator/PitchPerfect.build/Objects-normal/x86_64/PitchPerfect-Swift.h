@@ -87,6 +87,8 @@ typedef int swift_int3  __attribute__((__ext_vector_type__(3)));
 typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import AVFoundation;
+@import ObjectiveC;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -108,6 +110,7 @@ SWIFT_CLASS("_TtC12PitchPerfect11AppDelegate")
 @end
 
 @class AVAudioPlayer;
+@class RecordedAudio;
 @class UIButton;
 @class NSBundle;
 @class NSCoder;
@@ -115,6 +118,7 @@ SWIFT_CLASS("_TtC12PitchPerfect11AppDelegate")
 SWIFT_CLASS("_TtC12PitchPerfect24PlaySoundsViewController")
 @interface PlaySoundsViewController : UIViewController
 @property (nonatomic, strong) AVAudioPlayer * __null_unspecified audioPlayer;
+@property (nonatomic, strong) RecordedAudio * __null_unspecified receivedAudio;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)startPlayBack;
@@ -125,10 +129,14 @@ SWIFT_CLASS("_TtC12PitchPerfect24PlaySoundsViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class AVAudioRecorder;
+@class UIStoryboardSegue;
 @class UILabel;
 
 SWIFT_CLASS("_TtC12PitchPerfect26RecordSoundsViewController")
-@interface RecordSoundsViewController : UIViewController
+@interface RecordSoundsViewController : UIViewController <AVAudioRecorderDelegate>
+@property (nonatomic, strong) AVAudioRecorder * __null_unspecified audioRecorder;
+@property (nonatomic, strong) RecordedAudio * __null_unspecified recordedAudio;
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified recordingText;
 @property (nonatomic, weak) IBOutlet UIButton * __null_unspecified stopButton;
 @property (nonatomic, weak) IBOutlet UIButton * __null_unspecified recordButton;
@@ -136,9 +144,20 @@ SWIFT_CLASS("_TtC12PitchPerfect26RecordSoundsViewController")
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)recordAudio:(UIButton * __nonnull)sender;
+- (void)audioRecorderDidFinishRecording:(AVAudioRecorder * __nonnull)recorder successfully:(BOOL)flag;
+- (void)prepareForSegue:(UIStoryboardSegue * __nonnull)segue sender:(id __nullable)sender;
 - (IBAction)stopRecording:(UIButton * __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSURL;
+
+SWIFT_CLASS("_TtC12PitchPerfect13RecordedAudio")
+@interface RecordedAudio : NSObject
+@property (nonatomic, strong) NSURL * __null_unspecified filePathURL;
+@property (nonatomic, copy) NSString * __null_unspecified title;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #pragma clang diagnostic pop

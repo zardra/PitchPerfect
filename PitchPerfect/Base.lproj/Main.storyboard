@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -56,12 +57,12 @@
                                 <exclude reference="jIP-CS-0uX"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="3Af-Sk-eOl"/>
-                                <exclude reference="XsC-Ef-Wuw"/>
+                                <exclude reference="Yx8-ea-wTw"/>
                                 <exclude reference="1xx-ec-C3U"/>
                                 <exclude reference="vex-5j-nH6"/>
+                                <exclude reference="3Af-Sk-eOl"/>
+                                <exclude reference="XsC-Ef-Wuw"/>
                                 <exclude reference="v69-Ug-V7v"/>
-                                <exclude reference="Yx8-ea-wTw"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -71,12 +72,12 @@
                                 <include reference="jIP-CS-0uX"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="3Af-Sk-eOl"/>
-                                <include reference="XsC-Ef-Wuw"/>
+                                <include reference="Yx8-ea-wTw"/>
                                 <include reference="1xx-ec-C3U"/>
                                 <include reference="vex-5j-nH6"/>
+                                <include reference="3Af-Sk-eOl"/>
+                                <include reference="XsC-Ef-Wuw"/>
                                 <include reference="v69-Ug-V7v"/>
-                                <include reference="Yx8-ea-wTw"/>
                             </mask>
                         </variation>
                     </view>
@@ -115,7 +116,6 @@
                                 <state key="normal" image="stop"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kjb-at-6Qc"/>
-                                    <segue destination="PyV-e5-qKe" kind="show" id="3U3-XG-hxc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -164,6 +164,7 @@
                         <outlet property="recordButton" destination="Rwi-fU-w0X" id="7md-qF-D68"/>
                         <outlet property="recordingText" destination="kLz-F5-P5p" id="FCU-fY-oPO"/>
                         <outlet property="stopButton" destination="UBJ-5R-iAI" id="eMF-dU-crP"/>
+                        <segue destination="PyV-e5-qKe" kind="show" identifier="stopRecording" id="4nV-2R-QOp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
