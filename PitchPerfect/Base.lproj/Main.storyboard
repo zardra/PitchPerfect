@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Play Sounds View Controller-->
@@ -14,25 +15,38 @@
                         <viewControllerLayoutGuide type="bottom" id="DXE-Tc-yt6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Gko-uO-4kg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vc6-6P-TlL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vc6-6P-TlL">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="52" y="108" width="46" height="30"/>
-                                </variation>
+                                <state key="normal" image="snail"/>
+                                <connections>
+                                    <action selector="playSlowAudio:" destination="PyV-e5-qKe" eventType="touchUpInside" id="Pku-4P-xAy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vc6-6P-TlL" firstAttribute="top" secondItem="DPw-z4-jH7" secondAttribute="bottom" constant="50" id="3Af-Sk-eOl"/>
+                            <constraint firstItem="Vc6-6P-TlL" firstAttribute="leading" secondItem="Gko-uO-4kg" secondAttribute="leadingMargin" constant="30" id="XsC-Ef-Wuw"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Vc6-6P-TlL"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="3Af-Sk-eOl"/>
+                                <exclude reference="XsC-Ef-Wuw"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Vc6-6P-TlL"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="3Af-Sk-eOl"/>
+                                <include reference="XsC-Ef-Wuw"/>
                             </mask>
                         </variation>
                     </view>
@@ -147,6 +161,7 @@
     </scenes>
     <resources>
         <image name="microphone" width="100" height="100"/>
+        <image name="snail" width="100" height="100"/>
         <image name="stop" width="50" height="50"/>
     </resources>
 </document>

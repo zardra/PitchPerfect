@@ -107,18 +107,21 @@ SWIFT_CLASS("_TtC12PitchPerfect11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class AVAudioPlayer;
+@class UIButton;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC12PitchPerfect24PlaySoundsViewController")
 @interface PlaySoundsViewController : UIViewController
+@property (nonatomic, strong) AVAudioPlayer * __null_unspecified audioPlayer;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (IBAction)playSlowAudio:(UIButton * __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIButton;
 @class UILabel;
 
 SWIFT_CLASS("_TtC12PitchPerfect14ViewController")

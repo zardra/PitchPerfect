@@ -13,6 +13,7 @@
 		CDD2F9681C6C2373004D7281 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDD2F9671C6C2373004D7281 /* Assets.xcassets */; };
 		CDD2F96B1C6C2373004D7281 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD2F9691C6C2373004D7281 /* LaunchScreen.storyboard */; };
 		CDD2F9731C6D6F42004D7281 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD2F9721C6D6F41004D7281 /* PlaySoundsViewController.swift */; };
+		CDD2F9751C719645004D7281 /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDD2F9741C719645004D7281 /* movie_quote.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CDD2F96A1C6C2373004D7281 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDD2F96C1C6C2373004D7281 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDD2F9721C6D6F41004D7281 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		CDD2F9741C719645004D7281 /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = movie_quote.mp3; path = ../movie_quote.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		CDD2F9541C6C2373004D7281 = {
 			isa = PBXGroup;
 			children = (
+				CDD2F9741C719645004D7281 /* movie_quote.mp3 */,
 				CDD2F95F1C6C2373004D7281 /* PitchPerfect */,
 				CDD2F95E1C6C2373004D7281 /* Products */,
 			);
@@ -127,6 +130,7 @@
 			files = (
 				CDD2F96B1C6C2373004D7281 /* LaunchScreen.storyboard in Resources */,
 				CDD2F9681C6C2373004D7281 /* Assets.xcassets in Resources */,
+				CDD2F9751C719645004D7281 /* movie_quote.mp3 in Resources */,
 				CDD2F9661C6C2373004D7281 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
