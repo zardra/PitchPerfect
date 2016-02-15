@@ -127,8 +127,8 @@ SWIFT_CLASS("_TtC12PitchPerfect24PlaySoundsViewController")
 
 @class UILabel;
 
-SWIFT_CLASS("_TtC12PitchPerfect14ViewController")
-@interface ViewController : UIViewController
+SWIFT_CLASS("_TtC12PitchPerfect26RecordSoundsViewController")
+@interface RecordSoundsViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified recordingText;
 @property (nonatomic, weak) IBOutlet UIButton * __null_unspecified stopButton;
 @property (nonatomic, weak) IBOutlet UIButton * __null_unspecified recordButton;
