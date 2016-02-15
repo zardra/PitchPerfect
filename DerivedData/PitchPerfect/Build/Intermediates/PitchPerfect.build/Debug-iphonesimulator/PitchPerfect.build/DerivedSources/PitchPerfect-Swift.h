@@ -117,6 +117,7 @@ SWIFT_CLASS("_TtC12PitchPerfect24PlaySoundsViewController")
 @property (nonatomic, strong) AVAudioPlayer * __null_unspecified audioPlayer;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (void)startPlayBack;
 - (IBAction)stopPlayBack:(UIButton * __nonnull)sender;
 - (IBAction)playSlowAudio:(UIButton * __nonnull)sender;
 - (IBAction)playFastAudio:(UIButton * __nonnull)sender;
