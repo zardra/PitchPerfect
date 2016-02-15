@@ -144,9 +144,9 @@ SWIFT_CLASS("_TtC12PitchPerfect26RecordSoundsViewController")
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)recordAudio:(UIButton * __nonnull)sender;
+- (IBAction)stopRecording:(UIButton * __nonnull)sender;
 - (void)audioRecorderDidFinishRecording:(AVAudioRecorder * __nonnull)recorder successfully:(BOOL)flag;
 - (void)prepareForSegue:(UIStoryboardSegue * __nonnull)segue sender:(id __nullable)sender;
-- (IBAction)stopRecording:(UIButton * __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

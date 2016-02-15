@@ -58,6 +58,14 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         
     }
     
+    @IBAction func stopRecording(sender: UIButton) {
+        recordingText.hidden = true
+        
+        audioRecorder.stop()
+        let audioSession = AVAudioSession.sharedInstance()
+        try! audioSession.setActive(false)
+    }
+    
     func audioRecorderDidFinishRecording(recorder: AVAudioRecorder, successfully flag: Bool) {
         if(flag) {
             recordedAudio = RecordedAudio()
@@ -78,14 +86,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
             let data = sender as! RecordedAudio
             playSoundsVC.receivedAudio = data
         }
-    }
-    
-    @IBAction func stopRecording(sender: UIButton) {
-        recordingText.hidden = true
-        
-        audioRecorder.stop()
-        let audioSession = AVAudioSession.sharedInstance()
-        try! audioSession.setActive(false)
     }
     
 }
