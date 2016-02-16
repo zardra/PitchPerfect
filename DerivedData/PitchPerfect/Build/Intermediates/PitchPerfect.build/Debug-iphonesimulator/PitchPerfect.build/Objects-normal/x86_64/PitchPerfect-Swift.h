@@ -111,6 +111,8 @@ SWIFT_CLASS("_TtC12PitchPerfect11AppDelegate")
 
 @class AVAudioPlayer;
 @class RecordedAudio;
+@class AVAudioEngine;
+@class AVAudioFile;
 @class UIButton;
 @class NSBundle;
 @class NSCoder;
@@ -119,12 +121,16 @@ SWIFT_CLASS("_TtC12PitchPerfect24PlaySoundsViewController")
 @interface PlaySoundsViewController : UIViewController
 @property (nonatomic, strong) AVAudioPlayer * __null_unspecified audioPlayer;
 @property (nonatomic, strong) RecordedAudio * __null_unspecified receivedAudio;
+@property (nonatomic, strong) AVAudioEngine * __null_unspecified audioEngine;
+@property (nonatomic, strong) AVAudioFile * __null_unspecified audioFile;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)startPlayBack;
 - (IBAction)stopPlayBack:(UIButton * __nonnull)sender;
 - (IBAction)playSlowAudio:(UIButton * __nonnull)sender;
 - (IBAction)playFastAudio:(UIButton * __nonnull)sender;
+- (IBAction)playChipmunkAudio:(UIButton * __nonnull)sender;
+- (void)playAudioWithVariablePitch:(float)pitch;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
