@@ -135,15 +135,6 @@
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zt0-zq-7mx"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLz-F5-P5p">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.10196078431372549" green="0.21568627450980393" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="155" y="374" width="91" height="24"/>
-                                </variation>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBJ-5R-iAI">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="stop"/>
@@ -151,6 +142,12 @@
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kjb-at-6Qc"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLz-F5-P5p">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.10196078431372549" green="0.21568627450980393" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -158,14 +155,14 @@
                             <constraint firstItem="Rwi-fU-w0X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yun-Yy-kyD"/>
                             <constraint firstItem="Rwi-fU-w0X" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="f9W-JU-XUq"/>
                             <constraint firstItem="UBJ-5R-iAI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kzO-wL-R4o"/>
-                            <constraint firstItem="kLz-F5-P5p" firstAttribute="top" secondItem="Rwi-fU-w0X" secondAttribute="bottom" constant="24" id="pJl-yw-twO"/>
+                            <constraint firstItem="kLz-F5-P5p" firstAttribute="top" secondItem="Rwi-fU-w0X" secondAttribute="bottom" constant="10" id="pJl-yw-twO"/>
                             <constraint firstItem="kLz-F5-P5p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pba-k2-zFa"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Rwi-fU-w0X"/>
-                                <exclude reference="kLz-F5-P5p"/>
                                 <exclude reference="UBJ-5R-iAI"/>
+                                <exclude reference="kLz-F5-P5p"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="E1w-J2-BiR"/>
@@ -179,8 +176,8 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Rwi-fU-w0X"/>
-                                <include reference="kLz-F5-P5p"/>
                                 <include reference="UBJ-5R-iAI"/>
+                                <include reference="kLz-F5-P5p"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="E1w-J2-BiR"/>
@@ -202,7 +199,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1240.5" y="321"/>
+            <point key="canvasLocation" x="1240" y="321"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DmH-1a-u82">
