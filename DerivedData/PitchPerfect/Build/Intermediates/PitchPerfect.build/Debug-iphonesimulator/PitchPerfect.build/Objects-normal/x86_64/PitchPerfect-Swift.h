@@ -125,6 +125,7 @@ SWIFT_CLASS("_TtC12PitchPerfect24PlaySoundsViewController")
 @property (nonatomic, strong) AVAudioFile * __null_unspecified audioFile;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (void)stopAndReset;
 - (void)startPlayBack;
 - (IBAction)stopPlayBack:(UIButton * __nonnull)sender;
 - (IBAction)playSlowAudio:(UIButton * __nonnull)sender;
@@ -164,7 +165,7 @@ SWIFT_CLASS("_TtC12PitchPerfect13RecordedAudio")
 @interface RecordedAudio : NSObject
 @property (nonatomic, strong) NSURL * __null_unspecified filePathURL;
 @property (nonatomic, copy) NSString * __null_unspecified title;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithFilePathURL:(NSURL * __nonnull)filePathURL title:(NSString * __nonnull)title OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #pragma clang diagnostic pop
