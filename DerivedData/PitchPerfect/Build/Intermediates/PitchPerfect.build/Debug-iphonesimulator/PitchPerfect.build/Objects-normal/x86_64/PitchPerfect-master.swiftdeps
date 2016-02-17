@@ -1,8 +1,8 @@
 version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
 options: "03fa045980a564e65669dd68c543bf47"
-build_time: [509000747, 703413000]
+build_time: [509001907, 29126000]
 inputs:
-  "/Users/zardra/Coding/iOS/Udacity/Intro to iOS App w Swift/PitchPerfect/PitchPerfect/RecordSoundsViewController.swift": [508999821, 0]
-  "/Users/zardra/Coding/iOS/Udacity/Intro to iOS App w Swift/PitchPerfect/PitchPerfect/AppDelegate.swift": [508471411, 0]
-  "/Users/zardra/Coding/iOS/Udacity/Intro to iOS App w Swift/PitchPerfect/PitchPerfect/PlaySoundsViewController.swift": [509000747, 0]
+  "/Users/zardra/Coding/iOS/Udacity/Intro to iOS App w Swift/PitchPerfect/PitchPerfect/RecordSoundsViewController.swift": [509001906, 0]
+  "/Users/zardra/Coding/iOS/Udacity/Intro to iOS App w Swift/PitchPerfect/PitchPerfect/PlaySoundsViewController.swift": [509001836, 0]
   "/Users/zardra/Coding/iOS/Udacity/Intro to iOS App w Swift/PitchPerfect/PitchPerfect/RecordedAudio.swift": [508999821, 0]
+  "/Users/zardra/Coding/iOS/Udacity/Intro to iOS App w Swift/PitchPerfect/PitchPerfect/AppDelegate.swift": [508471411, 0]
