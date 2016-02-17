@@ -130,6 +130,7 @@ SWIFT_CLASS("_TtC12PitchPerfect24PlaySoundsViewController")
 - (IBAction)playSlowAudio:(UIButton * __nonnull)sender;
 - (IBAction)playFastAudio:(UIButton * __nonnull)sender;
 - (IBAction)playChipmunkAudio:(UIButton * __nonnull)sender;
+- (IBAction)playDarthVaderAudio:(UIButton * __nonnull)sender;
 - (void)playAudioWithVariablePitch:(float)pitch;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
